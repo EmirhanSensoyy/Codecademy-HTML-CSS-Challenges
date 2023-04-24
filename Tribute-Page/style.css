@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+html, body {
+	height: 100%;
+	background-color: black;
+	color: white;
+}
+.div {
+	margin-top: 10%;
+	letter-spacing: 5px;
+	line-height: 3em;
+	font-size: 2em;
+	min-height: 100vh;
+	text-align: center;
+}
+.div-btn {
+	display: block;
+	width: 25%;
+	margin: auto;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-top: 50px;
+	color: white;
+	
+}
+.div-btn:hover {
+	background-color: rgba(99, 98, 98, 0.584);
+}
+.div-center {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-left: 10%;
+	min-height: 80vh;
+	background-color: white;
+	color: black;
+	font-size: 1.8em;
+	background:white url(images/wallpaper.png)no-repeat right;
+	background-size: contain;
+}
+.last {
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+	font-size: 0.9em;
+	line-height: 3.5em;
+	margin: 100px;
+}
+.last > h1 {
+	margin-bottom: 50px;
+	font-size: 3em;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	background-color: white;
+}
+.card {
+	color: black;
+ 	display: flex;
+  	height: 400px;
+	width: 400px;
+	background-color: #C9B8FF;
+	border-radius: 10px;
+	box-shadow: -1rem 0 3rem #0003;
+	opacity: 0.7;
+	transition: 0.4s ease-out;
+	position: relative;
+	left: 0px;
+}
+.slider .card:hover {
+	opacity: 1;
+}
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+.footer {
+	min-height:	min-content;
+}
